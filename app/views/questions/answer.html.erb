@@ -1,9 +1,12 @@
 <div class="container mt-5 mt-20 pt-10">
-  <div>
-    <p class="fs-3 text-center fw-semibold"><%= @answer %></p>
 
+  <div>
+    <p class="fs-3 text-center fw-semibold opacity">You said "<%= @question %>"</p>
+    <p class="fs-3 text-center fw-semibold">Coach says "<%= @answer %>!"</p>
   </div>
+
   <div class="text-center pt-10">
     <%= link_to "Ask me another question! ⛹️‍♀️", ask_path, class: "btn btn-secondary btn-lg" %>
   </div>
+
 </div>
